@@ -1,0 +1,939 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+
+body{
+    background-image: url(images/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* -------utility class------- */
+
+.container{
+    /* margin-inline: 50px; */
+    overflow: hidden;
+}
+
+hr{
+    height: 3px;
+    background-color: rgb(223, 223, 222);
+    margin-top: 8%;
+    outline: 0;
+    /* border: 0; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* --------header------- */
+
+.navbars{
+    display: flex;
+    justify-content: space-between;
+}
+.navbars ul{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 48%;
+    flex-wrap: wrap;
+    margin-right: 8%;
+}
+
+.navbars ul li{
+    list-style: none;
+}
+
+.navbars ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: black;
+
+}
+
+nav{
+    background-color: rgb(251, 249, 249);
+    height: 60px;
+    padding-top: 1.5rem;
+}
+
+.navbars a.logo{
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    margin-top: -10px;
+    font-weight: 700;
+    margin-left: 7%;
+}
+
+.navbars a span{
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: red;
+}
+
+.navbars ul li a:hover{
+    color: rgb(102, 8, 233);
+}
+
+.navbars a:hover{
+    color: rgb(233, 7, 7);
+}
+
+.navbars button{
+    width: 130%;
+    height: 30px;
+    font-size: 1.7rem;
+    background-color: rgb(6, 6, 186);
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navbars button:hover{
+    background-color: rgb(52, 52, 246);
+}
+
+.navbars i{
+    display: none;
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 50%;
+}
+
+.image1 img{
+    width: 30vw;
+}
+
+.image1{
+    margin-right: 12%;
+    margin-top: 8%;
+}
+
+.tittle{
+    margin-top: 13%;
+    margin-left: 15%;
+}
+
+.tittle p{
+    font-size: 2.3rem;
+}
+
+.tittle h1{
+    color: rgb(210, 9, 9);
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.tittle span{
+    color: rgb(210, 9, 9);
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+.tittle button{
+    width: 16rem;
+    height: 4rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    background-color: rgb(6, 6, 186);
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.tittle button:hover{
+    background-color: rgb(52, 52, 246);
+}
+
+.social-media{
+    display: flex;
+    margin-top: 85px;
+    gap: 25px;
+}
+
+.fa-brands{
+    font-size: 3.5rem;
+}
+
+.fa-solid{
+    font-size: 2rem;
+}
+
+.image2 img{
+    width: 65%;
+}
+
+#about{
+    position: relative;
+    margin-top: 40px;
+}
+
+#about h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 12%;
+}
+
+h2 u{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.about-me{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.image2{
+    margin-left: 15%;
+    flex-basis: 40%;
+}
+
+.about-discription{
+    flex-basis: 50%;
+    font-size: 1.6rem;
+    width: 100%;
+    margin-right: 13%;
+    margin-top: 20px;
+}
+
+.about-discription span{
+    color: rgb(210, 9, 9);
+    font-weight: 550;
+    font-size: 1.6rem;
+}
+
+#skills h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 4%;
+}
+
+#skills{
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+.skill-col{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-image{
+    text-align: center;
+}
+
+.skill-image i{
+    font-size: 8rem;
+}
+
+.skill-text p{
+    font-size: 2rem;
+    font-weight: 570;
+    padding-top: 10px;
+}
+
+.skill-image h1{
+    font-size: 50px;
+    color: rgb(90, 90, 90);
+}
+
+#education h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#education{
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+.cards{
+    align-items: center;
+}
+
+#education p{
+    font-size: 1.6rem;
+}
+
+#education h3{
+    font-size: 2rem;
+}
+
+#education span{
+    font-size: 1.6rem;
+}
+
+.row{
+    padding: 10px;
+    margin: 1.5rem;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row span{
+    color: rgb(85, 0, 255);
+}
+
+.row p{
+    color: rgb(210, 9, 9);
+}
+
+#projects{
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+.row1 img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.row1 p{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.row1{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 250px;
+    height: 300px;
+}
+
+#projects h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.row-text{
+    text-align: center;
+    cursor: pointer;
+}
+
+.row-text:hover{
+    color: #1a55bc;
+}
+
+.my-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.cal{
+    text-align: center;
+}
+
+.cal img{
+    width: 150px;
+}
+
+.to-do{
+    text-align: center;
+}
+
+.to-do img{
+    width: 190px;
+}
+
+#contact{
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+#contact h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.contact-us p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text-message{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.submit-button button{
+    width: 28%;
+    height: 30px;
+    font-size: 1.7rem;
+    background-color: rgb(5, 5, 151);
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.submit-button button:hover{
+    background-color: rgb(52, 52, 246);
+}
+
+.name input{
+    width: 400px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: rgb(232, 233, 233);
+}
+
+.email input{
+    width: 400px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: rgb(231, 232, 232);
+}
+
+.message textarea{
+    width: 400px;
+    font-size: 17px;
+    border-radius: 8px;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(236, 237, 237);
+}
+
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-mail{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.my-mail h1{
+    font-size: 2.5rem;
+}
+
+.my-mail h4{
+    font-size: 1.5rem;
+}
+
+.insta{
+    font-size: 18px;
+}
+
+/* css media ------ */
+
+@media screen and (max-width:950px) {
+    
+    .navbars i{
+        display: flex;
+        margin-right: 60px;
+    }
+
+    .navbars ul{
+        display: none;
+    }
+
+    .tittle{
+        margin-top: 10%;
+        margin-left: 15%;
+    }
+
+    .tittle p{
+        font-size: 1.7rem;
+    }
+    
+    .tittle h1{
+        font-size: 3.5rem;
+    }
+    
+    .tittle span{
+        font-size: 1.8rem;
+    }
+    
+    .tittle button{
+        width: 14rem;
+        height: 3.5rem;
+        font-size: 1.8rem;
+    }
+    
+    .fa-brands{
+        font-size: 3rem;
+    }
+    
+    .fa-solid{
+        font-size: 1.8rem;
+    }
+
+    .header-section{
+        gap: 20px;
+    }
+
+    .image2{
+        margin-left: 15%;
+        flex-basis: 50%;
+    }
+
+    .about-discription{
+        flex-basis: 65%;
+        font-size: 1.5rem;
+        width: 100%;
+        margin-right: 8%;
+        margin-top: 10px;
+    }
+    
+    .about-discription span{
+        font-size: 1.5rem;
+    }
+
+    .image2 img{
+        width: 80%;
+    }
+
+    #education p{
+        font-size: 1.6rem;
+    }
+    
+    #education h3{
+        font-size: 1.8rem;
+    }
+    
+    #education span{
+        font-size: 1.6rem;
+    }
+
+    #contact{
+        margin-left: 14%;
+        margin-right: 12%;
+    }
+    
+    .contact-us p{
+        font-size: 18px;
+    }
+    
+    .name input{
+        width: 300px;
+        height: 35px;
+        font-size: 15px;
+    }
+    
+    .email input{
+        width: 300px;
+        height: 35px;
+        font-size: 15px;
+    }
+    
+    .message textarea{
+        width: 300px;
+        font-size: 15px;
+    }
+    
+    .contact-us{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    
+    .my-mail{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    
+    .my-mail h1{
+        font-size: 2.2rem;
+    }
+    
+    .my-mail h4{
+        font-size: 1.3rem;
+    }
+    
+    .insta{
+        font-size: 15px;
+    }
+
+    .fa-envelope{
+        font-size: 15px;
+    }
+
+    .row1 p{
+        font-size: 2.1rem;
+    }
+    
+    .row1{
+        width: 200px;
+        height: 250px;
+    }
+    
+    .cal img{
+        width: 110px;
+    }
+    
+    .to-do img{
+        width: 150px;
+    }
+
+    h2 u{
+    font-size: 3.9 rem;
+    font-weight: 700;
+    }
+}
+
+@media screen and (max-width:725px) {
+    
+    .image1 img{
+        width: 43vw;
+    }
+    
+    .image1{
+        margin-right: 15%;
+        margin-top: 10%;
+    }
+
+    .fa-brands{
+        font-size: 2.3rem;
+    }
+
+    .social-media{
+        gap: 20px;
+    }
+
+    .about-me{
+        display: block;
+    }
+
+    .image2 img{
+        width: 50%;
+    }
+
+    .image2{
+        margin-left: 35%;
+    }
+
+    .about-discription{
+        font-size: 1.6rem;
+        width: 88%;
+        margin-left: 6%;
+        margin-top: 20px;
+    }
+
+    #education h3{
+        font-size: 1.7rem;
+    }
+
+    #contact{
+        margin-left: 8%;
+        margin-right: 1%;
+    }
+    
+    .contact-us p{
+        font-size: 16px;
+    }
+    
+    .name input{
+        width: 300px;
+        height: 35px;
+        font-size: 13px;
+    }
+    
+    .email input{
+        width: 300px;
+        height: 35px;
+        font-size: 13px;
+    }
+    
+    .message textarea{
+        width: 300px;
+        font-size: 13px;
+    }
+    
+    .contact-us{
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    
+    .my-mail{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    
+    .my-mail h1{
+        font-size: 2rem;
+    }
+    
+    .my-mail h4{
+        font-size: 1rem;
+    }
+    
+    .insta{
+        font-size: 13px;
+    }
+
+    .fa-envelope{
+        font-size: 13px;
+    }
+
+    .skill-image i{
+        font-size: 7rem;
+    }
+    
+    .skill-text p{
+        font-size: 1.7rem;
+        font-weight: 570;
+        padding-top: 10px;
+    }
+    
+    .skill-image h1{
+        font-size: 4.5rem;
+        color: rgb(90, 90, 90);
+    }
+
+    h2 u{
+    font-size: 3.7rem;
+    font-weight: 700;
+    }
+}
+
+@media screen and (max-width:530px) {
+
+    #contact{
+        margin-left: 14%;
+        margin-right: 12%;
+    }
+    
+    .contact-us{
+        display: block;
+    }
+
+    .text-message{
+        align-items: center;
+    }
+
+    .my-mail{
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .contact-us p{
+        font-size: 18px;
+    }
+    
+    .name input{
+        width: 300px;
+        height: 35px;
+        font-size: 15px;
+    }
+    
+    .email input{
+        width: 300px;
+        height: 35px;
+        font-size: 15px;
+    }
+    
+    .message textarea{
+        width: 300px;
+        font-size: 15px;
+    }
+    
+    .my-mail{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    
+    .my-mail h1{
+        font-size: 2.2rem;
+    }
+    
+    .my-mail h4{
+        font-size: 1.3rem;
+    }
+    
+    .insta{
+        font-size: 15px;
+    }
+
+    .fa-envelope{
+        font-size: 15px;
+    }
+
+    #education p{
+        font-size: 1.5rem;
+    }
+    
+    #education h3{
+        font-size: 1.6rem;
+    }
+    
+    #education span{
+        font-size: 1.5rem;
+    }
+
+    .row1{
+        width: 180px;
+        height: 220px;
+    }
+
+    .row1 p{
+        font-size: 2rem;
+    }
+    
+    .cal img{
+        width: 90px;
+    }
+    
+    .to-do img{
+        width: 130px;
+    }
+
+    .skill-image i{
+        font-size: 6rem;
+    }
+    
+    .skill-text p{
+        font-size: 1.5rem;
+        font-weight: 570;
+        padding-top: 10px;
+    }
+    
+    .skill-image h1{
+        font-size: 4.1rem;
+        color: rgb(90, 90, 90);
+    }
+
+    h2 u{
+    font-size: 3.5rem;
+    font-weight: 700;
+     }
+}
+
+@media screen and (max-width:415px){
+    .contact-us p{
+        font-size: 14px;
+    }
+    
+    .name input{
+        width: 220px;
+        height: 30px;
+        font-size: 13px;
+    }
+    
+    .email input{
+        width: 220px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .message textarea{
+        width: 220px;
+        font-size: 13px;
+    }
+
+    .row1{
+        width: 150px;
+        height: 180px;
+    }
+    
+    .cal img{
+        width: 70px;
+    }
+    
+    .to-do img{
+        width: 100px;
+    }
+
+    .row1 p{
+        font-size: 1.7rem;
+    }
+
+    .skill-image i{
+        font-size: 5rem;
+    }
+    
+    .skill-text p{
+        font-size: 1.4rem;
+        font-weight: 570;
+        padding-top: 10px;
+    }
+    
+    .skill-image h1{
+        font-size: 3.9rem;
+        color: rgb(90, 90, 90);
+    }
+
+    h2 u{
+        font-size: 2.8rem;
+        font-weight: 600;
+    }
+    
+    .image1{
+        margin-right: 15%;
+        margin-top: 14%;
+    }
+
+    .fa-brands{
+        font-size: 1.6rem;
+    }
+
+    .tittle p{
+        font-size: 1.5rem;
+    }
+    
+    .tittle h1{
+        font-size: 2.8rem;
+    }
+    
+    .tittle span{
+        font-size: 1.6rem;
+    }
+    
+    .tittle button{
+        width: 11rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+    
+    .fa-solid{
+        font-size: 1.6rem;
+    }
+
+    .social-media{
+        gap: 10px;
+    }
+}
+
+.extrapart{
+    height: 10vh;
+}
